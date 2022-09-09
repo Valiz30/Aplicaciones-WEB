@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios</title>
+        <link rel="stylesheet" href="estilo01.css">
+    </head>
+    <body>
+            <h1>Estructura de un Formulario</h1>
+        <p>
+            &lt;form action="http://www.example.com/subscribe.php" method="get"&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is where the form controls will appear.&lt;/p&gt;</br>
+            &lt;/form&gt;
+        </p>
+            <form action="http://www.example.com/subscribe.php" method="get">
+                <p>
+                    Resultado</br>
+                    This is where the form controls will appear.
+                </p>
+            </form>
+            <div></div>
+            <p>
+                action: El valor es la URL de la pagina en el servidor que recibira la informacion contenida en el Formulario
+                cuando este sea enviado</br>
+                method: Los formularios se pueden enviar usando uno de dos metodos:</br>
+                <ul>
+                    <li>
+                        get: Los valores del formulario son añadidos al final de la URL especificada en el atributo action</br>
+                        y es ideal para formularios pequeños o en la recuperacion de datos de un servidor web
+                    </li>
+                    <li>
+                        post: Los valore del formulario son enviados en lo que se conoce como encabezados HTTP y es ideal para </br>
+                        permitir a los usuarios cargar un archivo en el formulario, si el formulario es muy grande, si contiene </br>
+                        dato sensibles, si añade o elimina dato de una base de datos.
+                    </li>
+                </ul>
+                
+            </p>
+        <center>
+            <a href="forms.html">ATRAS</a>
+        </center>
+    </body>
+</html>

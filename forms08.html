@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios</title>
+        <link rel="stylesheet" href="estilo01.css">
+    </head>
+    <body>
+            <h1>Cuadro de seleccion multiple</h1>
+        <p>
+            &lt;form action="http://www.example.com/example.php"&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Do you play any of the following instruments?</br>
+            (You can select more than one option by holding</br>
+            down control on a PC or command key on a Mac</br>
+            while selecting different options.)&lt;/p&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;select name="instruments" size="3" multiple="multiple"&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="guitar" selected="selected"&gt;Guitar&lt;/option&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="drums"&gt;Drums&lt;/option&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="keyboard"&gt;Keyboard&lt;/option&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="bass"&gt;Bass&lt;/option&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;
+        </p>
+        <p><b>Resultado:</b></p>
+            <form action="http://www.example.com/example.php">
+                <p>Do you play any of the following instruments?</br>
+                    (You can select more than one option by holding</br>
+                    down control on a PC or command key on a Mac</br>
+                    while selecting different options.)</p>
+                    <select name="instruments" size="3" multiple="multiple">
+                    <option value="guitar" selected="selected">Guitar</option>
+                    <option value="drums">Drums</option>
+                    <option value="keyboard" selected="selected">Keyboard</option>
+                    <option value="bass">Bass</option>
+                    </select>
+            </form>
+            <div></div>
+            <p>
+                &lt;select&gt;: Muestra un cuadro de lista desplegable, permite seleccionar una opcion
+                <ul>
+                    <li>&lt;option&gt;: Despliega un elemento que puede ser seleccionado</li>
+                    <li>value: Indica el valor que es enviado al servidor</li>
+                    <li>name: Indica el nombre del atributo</li>
+                    <li>selected: Indica cual es el valor a ser seleccionado cuando la pagina es cargada</li>
+                    <li>size: Indica el total de valores que seran mostrados de la lista</li>
+                    <li>multiple: Indica si el usuario puede seleccionar mas de una opcion</li>
+                </ul>
+                
+            </p>
+        <center>
+            <a href="forms.html">ATRAS</a>
+        </center>
+    </body>
+</html>

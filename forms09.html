@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios</title>
+        <link rel="stylesheet" href="estilo01.css">
+    </head>
+    <body>
+            <h1>Entrada de Archivos</h1>
+        <p>
+            &lt;form action="http://www.example.com/example.php" method="post"&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Upload your song in MP3 format:&lt;/p&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="file" name="user-song" value="pop"/&gt;&lt;br/&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Upload"/&gt;</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;
+        </p>
+        <p><b>Resultado:</b></p>
+        <form action="http://www.example.com/upload.php" method="post">
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song" /><br />
+        <input type="submit" value="Upload" />
+        </form>
+            <div></div>
+            <p>
+                &lt;input&gt;: Usado para crear diversos controles de formularios:
+                <ul>
+                    <li>type="file": Crea un boton para cargar el archivo y un area de texto donde se visualizara el nombre del archivo</li>
+                </ul>
+                
+            </p>
+        <center>
+            <a href="forms.html">ATRAS</a>
+        </center>
+    </body>
+</html>
