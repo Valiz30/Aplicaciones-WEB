@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="./css/Examen.css" />
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+    <script src="./js/examen.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
+    
+
+</head>
+
+<body style="display: flex; flex-direction: column">
+    <main class="examen main layout">
+        <!-- ======= section1 ======= -->
+        <section class="section1__inicio layout">
+            <img src="./assets/222bb70a36eedeec46832067ea99c293.png" alt="" class="section1__img layout" /><img src="./assets/9a6bcf61108ad5a877e92ad87ff4ecd9.png" alt="" class="section1__img layout1" />
+            <div class="section1__barInicio layout">
+                <h1 class="section1__salirJ layout">離れる</h1>
+                <h1 class="section1__inicioJ layout">始める</h1>
+                <div class="section1__inicio1 layout">
+                    <h1 class="section1__hero_title3 layout">Inicio</h1>
+                </div>
+                <button class="section1__btnSalir layout">
+                    <h1 class="section1__salir layout"><a href="salir.html">Salir</a></h1>
+                </button>
+            </div>
+        </section>
+        <comment content="======= End section1 =======" break="true"></comment><!-- ======= section2 ======= -->
+        <section class="section2__carta layout">
+            <div class="section2__listaPlatillos layout">
+                <div class="section2__lista layout">
+                    <h2 class="section2__platillos layout">Platillos</h2>
+                    <ul class="section2__platillos layout">
+                        <li><button class="btnPlatillo" id="p1" onclick="Mostrar(id)"></button></li>
+                        <li><button class="btnPlatillo" id="p2" onclick="Mostrar(id)"></button></li>
+                        <li><button class="btnPlatillo" id="p3" onclick="Mostrar(id)"></button></li>
+                        <li><button class="btnPlatillo" id="p4" onclick="Mostrar(id)"></button></li>
+                        <li><button class="btnPlatillo" id="p5" onclick="Mostrar(id)"></button></li>
+                        <li><button class="btnPlatillo" id="p6" onclick="Mostrar(id)"></button></li>
+                        <li><button class="btnPlatillo" id="p7" onclick="Mostrar(id)"></button></li>
+                        <li><button class="btnPlatillo" id="p8" onclick="Mostrar(id)"></button></li>
+                        <li><button class="btnPlatillo" id="p9" onclick="Mostrar(id)"></button></li>
+                        <li><button class="btnPlatillo" id="p10" onclick="Mostrar(id)"></button></li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="section2__block4 layout">
+                <div class="section2__botonesAdm layout">
+                    <div class="item">
+                        <button class="section2__btnAnadirNuevo layout" onclick="Añadir()">
+                            <h2 class="section2__medium_title layout">Añadir</h2>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <button class="section2__btnModificar layout" onclick="Modificar()">
+                            <h2 class="section2__medium_title layout">Modificar</h2>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <button class="section2__btnEliminar layout" onclick="Eliminar()">
+                            <h2 class="section2__medium_title layout">Eliminar</h2>
+                        </button>
+                    </div>
+                </div>
+                <div class="section2__administrar layout">
+                    <div class="item">
+                        <div class="section2__flex layout">
+                            <h2 class="section2__nombre2 layout">Nombre</h2>
+                            <div class="section2__nombrePlatilloAdm layout">
+                                <input class="section2__medium_title1 layout" type="text" id="nombre"></input>
+                            </div>
+                            <h2 class="section2__tipoComida2 layout">Tipo de Comida</h2>
+                            <div class="section2__tipoPlatilloAdm layout">
+                                <input class="section2__medium_title1 layout" type="text" id="tipoPlatillo"></input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item1">
+                        <div class="section2__flex layout1">
+                            <h2 class="section2__precio2 layout">Precio</h2>
+                            <div class="section2__precioPlatilloAdm layout">
+                                <input class="section2__medium_title2 layout" type="number" name="change" id="precio" min="25" max="1000" step="1"></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section2__block8 layout">
+                <div class="section2__mostrar layout">
+                    <div class="item">
+                        <div class="section2__flex layout2">
+                            <h2 class="section2__nombre1 layout">Nombre</h2>
+                            <div class="section2__nombrePlatillo layout">
+                                <input type="text" class="section2__medium_title1 layout" id="nombreP"></input>
+                            </div>
+                            <h2 class="section2__tipoComida1 layout" >Tipo de Comida</h2>
+                            <div class="section2__tipoPlatillo layout">
+                                <input type="text" class="section2__medium_title1 layout" id="tipoP"></input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item1">
+                        <div class="section2__flex layout">
+                            <h2 class="section2__precio1 layout" >Precio</h2>
+                            <div class="section2__procioPlatillo layout">
+                                <input type="number" class="section2__medium_title2 layout" id="precioP"></input></div>
+                            </div>
+                            <div class="item">
+                                <button class="section2__btnAnadir layout" onclick="Ordenar()">
+                                    <h2 class="section2__medium_title layout">Ordenar</h2>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section2__barCarta layout">
+                <h1 class="section2__cartaJ layout">メニュー</h1>
+                <div class="section2__carta1 layout">
+                    <h1 class="section2__hero_title3 layout">Carta</h1>
+                </div>
+            </div>
+        </section>
+        <comment content="======= End section2 =======" break="true"></comment><!-- ======= section3 ======= -->
+        <section class="section3__realizarPedido layout">
+            <button class="section3__btnComprar layout" onclick="Comprar()">
+                <h1 class="section3__comprar layout">Comprar</h1>
+            </button>
+            <div class="section3__listaPlatillos layout">
+                <div class="section3__lista layout">
+                    <h2 class="section3__platillos2 layout">Platillos</h2>
+                    <ul class="section2__platillos layout">
+                        <li id="c1"></li>
+                        <li id="c2"></li>
+                        <li id="c3"></li>
+                        <li id="c4"></li>
+                        <li id="c5"></li>
+                        <li id="c6"></li>
+                        <li id="c7"></li>
+                        <li id="c8"></li>
+                        <li id="c9"></li>
+                        <li id="c10"></li>
+                    </ul>
+                    
+                    <p class="section3__platillos2 layout">Total: </p>
+                    <center><p id="totalCuenta" class="section3__platillos2 layout"></p></center>
+                </div>
+            </div>
+            <div class="section3__barRealizarPedido layout">
+                <h1 class="section3__realizarPedidoJ layout">食べ物を頼む</h1>
+                <div class="section3__realizarPedido1 layout">
+                    <h1 class="section3__hero_title3 layout">Realizar Pedido</h1>
+                </div>
+            </div>
+        </section>
+        <!-- ======= End section3 ======= -->
+
+    </main>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+</body>
+
+</html>

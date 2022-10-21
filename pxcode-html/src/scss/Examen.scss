@@ -1,0 +1,1259 @@
+/* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
+@use "utils" as *;
+
+$color_type_0: rgb(0, 0, 0);
+$color_type_1: rgb(255, 162, 162);
+$color_type_2: rgb(255, 218, 218);
+$color_type_3: rgb(255, 242, 242);
+$color_type_4: rgba(255, 163, 163, 0.439);
+
+$font_type_0: 200 96px/1.2 "Raleway", Helvetica, Arial, serif;
+$font_type_1: 100 70px/1.2 "Raleway", Helvetica, Arial, serif;
+$font_type_2: 100 36px/1.2 "Raleway", Helvetica, Arial, serif;
+$font_type_3: 200 24px/1.2 "Raleway", Helvetica, Arial, serif;
+
+.main {
+  @include flex-column;
+  background-color: $color_type_3;
+}
+.main.layout {
+  position: relative;
+  overflow: hidden;
+}
+.section1__inicio {
+  @include flex-column;
+}
+.section1__inicio.layout {
+  position: relative;
+  margin: 26px 33px 21px 34px;
+  @include lg {
+    margin: 26px 29px 21px 30px;
+  }
+  @include md {
+    margin: 26px 24px 21px 25px;
+  }
+  @include sm {
+    margin: 26px 20px 21px 21px;
+  }
+  @include xs {
+    margin: 26px 18px 21px 19px;
+  }
+  @include xxs {
+    margin: 26px 16px 21px 17px;
+  }
+  @include tn {
+    margin: 26px 15px 21px;
+  }
+}
+.section1__img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  object-fit: contain;
+  object-position: center top;
+}
+.section1__img.layout {
+  position: absolute;
+  top: 316px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 88.42%;
+  margin: 0px 4.81% 0px 6.77%;
+}
+.section1__img.layout1 {
+  position: absolute;
+  top: 0px;
+  bottom: 466px;
+  left: 0px;
+  right: 0px;
+  width: 49.75%;
+  margin: 0px auto;
+}
+.section1__barInicio {
+  @include flex-column;
+  background-color: $color_type_2;
+  border: 1px dashed rgba(0, 0, 0, 0);
+  border-radius: 15px 15px 15px 15px;
+}
+.section1__barInicio.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 209px 0px 342px;
+}
+.section1__salirJ {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 0.43;
+  @include lg {
+    font-size: 61px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 52px;
+  }
+  @include sm {
+    font-size: 43px;
+  }
+  @include xs {
+    font-size: 39px;
+  }
+  @include xxs {
+    font-size: 35px;
+  }
+  @include tn {
+    font-size: 32px;
+  }
+}
+.section1__salirJ.layout {
+  position: relative;
+  flex-grow: 1;
+  width: 19.81%;
+  margin: 10px 0.44% 6px 79.75%;
+}
+.section1__inicioJ {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 0.43;
+  @include lg {
+    font-size: 61px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 52px;
+  }
+  @include sm {
+    font-size: 43px;
+  }
+  @include xs {
+    font-size: 39px;
+  }
+  @include xxs {
+    font-size: 35px;
+  }
+  @include tn {
+    font-size: 32px;
+  }
+}
+.section1__inicioJ.layout {
+  position: absolute;
+  top: 3px;
+  height: 100px;
+  left: 6px;
+  width: 375px;
+}
+.section1__inicio1 {
+  @include flex-column;
+}
+.section1__inicio1.layout {
+  position: absolute;
+  top: 19px;
+  bottom: 19px;
+  left: 45px;
+  right: 1225px;
+}
+.section1__hero_title3 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  @include lg {
+    font-size: 32px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 29px;
+  }
+  @include sm {
+    font-size: 25px;
+  }
+  @include xs {
+    font-size: 24px;
+  }
+  @include xxs {
+    font-size: 22px;
+  }
+  @include tn {
+    font-size: 21px;
+  }
+}
+.section1__hero_title3.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 9px 10px;
+  @include lg {
+    margin: 9px;
+  }
+  @include md {
+    margin: 9px 7px;
+  }
+  @include sm {
+    margin: 9px 6px;
+  }
+  @include xxs {
+    margin: 9px 5px;
+  }
+}
+.section1__btnSalir {
+  @include flex-column;
+  cursor: pointer;
+}
+.section1__btnSalir.layout {
+  position: absolute;
+  top: 22px;
+  height: min-content;
+  bottom: 16px;
+  left: 0px;
+  min-width: 0px;
+  width: fit-content;
+  margin: 0px 200px 0px 1085px;
+}
+.section1__salir {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  @include lg {
+    font-size: 32px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 29px;
+  }
+  @include sm {
+    font-size: 25px;
+  }
+  @include xs {
+    font-size: 24px;
+  }
+  @include xxs {
+    font-size: 22px;
+  }
+  @include tn {
+    font-size: 21px;
+  }
+}
+.section1__salir.layout {
+  position: relative;
+  height: min-content;
+  min-width: 0px;
+  width: fit-content;
+  margin: 9px 10px;
+}
+.section2__carta {
+  @include flex-column;
+}
+.section2__carta.layout {
+  position: relative;
+  margin: 15px 33px 18px 34px;
+  @include lg {
+    margin: 15px 29px 18px 30px;
+  }
+  @include md {
+    margin: 15px 24px 18px 25px;
+  }
+  @include sm {
+    margin: 15px 20px 18px 21px;
+  }
+  @include xs {
+    margin: 15px 18px 18px 19px;
+  }
+  @include xxs {
+    margin: 15px 16px 18px 17px;
+  }
+  @include tn {
+    margin: 15px 15px 18px;
+  }
+}
+.section2__listaPlatillos {
+  @include flex-column;
+  background-color: $color_type_2;
+  border: 1px dashed rgba(0, 0, 0, 0);
+  border-radius: 15px 15px 15px 15px;
+}
+.section2__listaPlatillos.layout {
+  position: absolute;
+  z-index: 0;
+  top: 173px;
+  height: 611px;
+  left: 78.5px;
+  width: 453px;
+  @include xl {
+    top: 155px;
+  }
+}
+.section2__lista {
+  @include flex-column;
+}
+.section2__lista.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 18px 22px 295px;
+  @include lg {
+    margin: 18px 19px 295px;
+  }
+  @include md {
+    margin: 18px 16px 295px;
+  }
+  @include sm {
+    margin: 18px 14px 295px;
+  }
+  @include xs {
+    margin: 18px 13px 295px;
+  }
+  @include xxs {
+    margin: 18px 11px 295px;
+  }
+  @include tn {
+    margin: 18px 10px 295px;
+  }
+}
+.section2__platillos {
+  @include font-face($font_type_3, $color_type_0, 0px);
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__platillos.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 10px 14px 0px 10px;
+  @include lg {
+    margin: 10px 12px 0px 9px;
+  }
+  @include md {
+    margin: 10px 10px 0px 7px;
+  }
+  @include sm {
+    margin: 10px 9px 0px 6px;
+  }
+  @include xs {
+    margin: 10px 8px 0px 6px;
+  }
+  @include xxs {
+    margin: 10px 7px 0px 5px;
+  }
+}
+.section2__block4 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border: 1px dashed rgba(0, 0, 0, 0);
+  border-radius: 15px 15px 15px 15px;
+}
+.section2__block4.layout {
+  position: absolute;
+  height: 315px;
+  bottom: 9px;
+  width: 745px;
+  right: 28px;
+}
+.section2__botonesAdm {
+  display: flex;
+  justify-content: space-between;
+}
+.section2__botonesAdm.layout {
+  position: absolute;
+  top: 232px;
+  bottom: 17px;
+  left: 0px;
+  right: 0px;
+  width: 78.39%;
+  margin: 0px auto;
+}
+.section2__section2__botonesAdm > .item {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 170px;
+}
+.section2__btnAnadirNuevo {
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
+}
+.section2__btnAnadirNuevo.layout {
+  position: relative;
+  height: min-content;
+}
+.section2__medium_title {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_3;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  @include lg {
+    font-size: 22px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__medium_title.layout {
+  position: relative;
+  height: min-content;
+  min-width: 0px;
+  width: fit-content;
+  margin: 5px auto;
+}
+.section2__btnModificar {
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
+}
+.section2__btnModificar.layout {
+  position: relative;
+  height: min-content;
+}
+.section2__btnEliminar {
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
+}
+.section2__btnEliminar.layout {
+  position: relative;
+  height: min-content;
+}
+.section2__administrar {
+  display: flex;
+  justify-content: space-between;
+}
+.section2__administrar.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 28px 22px 104px;
+  @include lg {
+    margin: 28px 19px 104px;
+  }
+  @include md {
+    margin: 28px 16px 104px;
+  }
+  @include sm {
+    margin: 28px 14px 104px;
+  }
+  @include xs {
+    margin: 28px 13px 104px;
+  }
+  @include xxs {
+    margin: 28px 11px 104px;
+  }
+  @include tn {
+    margin: 28px 10px 104px;
+  }
+}
+.section2__section2__administrar > .item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 369px;
+}
+.section2__flex {
+  @include flex-column;
+}
+.section2__flex.layout {
+  position: relative;
+  flex-grow: 1;
+}
+.section2__nombre2 {
+  @include font-face($font_type_3, $color_type_0, 0px);
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__nombre2.layout {
+  position: relative;
+  margin: 0px 10px;
+  @include lg {
+    margin: 0px 9px;
+  }
+  @include md {
+    margin: 0px 7px;
+  }
+  @include sm {
+    margin: 0px 6px;
+  }
+  @include xxs {
+    margin: 0px 5px;
+  }
+}
+.section2__nombrePlatilloAdm {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: 10px 10px 10px 10px;
+}
+.section2__nombrePlatilloAdm.layout {
+  position: relative;
+}
+.section2__medium_title1 {
+  @include font-face($font_type_3, $color_type_0, 0px);
+  opacity: 0.37;
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__medium_title1.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 10px 10px 0px;
+  @include lg {
+    margin: 10px 9px 0px;
+  }
+  @include md {
+    margin: 10px 7px 0px;
+  }
+  @include sm {
+    margin: 10px 6px 0px;
+  }
+  @include xxs {
+    margin: 10px 5px 0px;
+  }
+}
+.section2__tipoComida2 {
+  @include font-face($font_type_3, $color_type_0, 0px);
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__tipoComida2.layout {
+  position: relative;
+  margin: 21px 10px 0px;
+  @include lg {
+    margin: 21px 9px 0px;
+  }
+  @include md {
+    margin: 21px 7px 0px;
+  }
+  @include sm {
+    margin: 21px 6px 0px;
+  }
+  @include xxs {
+    margin: 21px 5px 0px;
+  }
+}
+.section2__tipoPlatilloAdm {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: 10px 10px 10px 10px;
+}
+.section2__tipoPlatilloAdm.layout {
+  position: relative;
+  margin: 2px 0px 0px;
+}
+.section2__section2__administrar > .item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 267px;
+}
+.section2__flex.layout1 {
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 100px;
+}
+.section2__precio2 {
+  @include font-face($font_type_3, $color_type_0, 0px);
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__precio2.layout {
+  position: relative;
+}
+.section2__precioPlatilloAdm {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: 10px 10px 10px 10px;
+}
+.section2__precioPlatilloAdm.layout {
+  position: relative;
+}
+.section2__medium_title2 {
+  @include v-center-content;
+  @include font-face($font_type_3, $color_type_0, 0px);
+  opacity: 0.37;
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__medium_title2.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 9.5px 0px 9.5px 8px;
+  @include lg {
+    margin: 9.5px 0px 9.5px 7px;
+  }
+  @include md {
+    margin: 9.5px 0px 9.5px 6px;
+  }
+  @include sm {
+    margin: 9.5px 0px 9.5px 5px;
+  }
+}
+.section2__block8 {
+  @include flex-column;
+  background-color: $color_type_2;
+  border: 1px dashed rgba(0, 0, 0, 0);
+  border-radius: 15px 15px 15px 15px;
+}
+.section2__block8.layout {
+  position: absolute;
+  top: 158px;
+  height: 258px;
+  width: 745px;
+  right: 28px;
+}
+.section2__mostrar {
+  display: flex;
+  justify-content: space-between;
+}
+.section2__mostrar.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 28px 22px 41px;
+  @include lg {
+    margin: 28px 19px 41px;
+  }
+  @include md {
+    margin: 28px 16px 41px;
+  }
+  @include sm {
+    margin: 28px 14px 41px;
+  }
+  @include xs {
+    margin: 28px 13px 41px;
+  }
+  @include xxs {
+    margin: 28px 11px 41px;
+  }
+  @include tn {
+    margin: 28px 10px 41px;
+  }
+}
+.section2__section2__mostrar > .item {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 369px;
+}
+.section2__flex.layout2 {
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 6px;
+}
+.section2__nombre1 {
+  @include font-face($font_type_3, $color_type_0, 0px);
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__nombre1.layout {
+  position: relative;
+  margin: 0px 10px;
+  @include lg {
+    margin: 0px 9px;
+  }
+  @include md {
+    margin: 0px 7px;
+  }
+  @include sm {
+    margin: 0px 6px;
+  }
+  @include xxs {
+    margin: 0px 5px;
+  }
+}
+.section2__nombrePlatillo {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: 10px 10px 10px 10px;
+}
+.section2__nombrePlatillo.layout {
+  position: relative;
+}
+.section2__tipoComida1 {
+  @include font-face($font_type_3, $color_type_0, 0px);
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__tipoComida1.layout {
+  position: relative;
+  margin: 21px 10px 0px;
+  @include lg {
+    margin: 21px 9px 0px;
+  }
+  @include md {
+    margin: 21px 7px 0px;
+  }
+  @include sm {
+    margin: 21px 6px 0px;
+  }
+  @include xxs {
+    margin: 21px 5px 0px;
+  }
+}
+.section2__tipoPlatillo {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: 10px 10px 10px 10px;
+}
+.section2__tipoPlatillo.layout {
+  position: relative;
+  margin: 2px 0px 0px;
+}
+.section2__section2__mostrar > .item1 {
+  @include flex-column;
+  position: relative;
+  flex: 0 1 267px;
+}
+.section2__precio1 {
+  @include font-face($font_type_3, $color_type_0, 0px);
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section2__precio1.layout {
+  position: relative;
+}
+.section2__procioPlatillo {
+  @include flex-column;
+  background-color: $color_type_3;
+  border-radius: 10px 10px 10px 10px;
+}
+.section2__procioPlatillo.layout {
+  position: relative;
+}
+.section2__section2__flex > .item {
+  @include flex-column;
+  position: relative;
+  flex: 0 0 auto;
+}
+.section2__btnAnadir {
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: 30px 30px 30px 30px;
+  cursor: pointer;
+}
+.section2__btnAnadir.layout {
+  position: relative;
+  height: min-content;
+  width: 63.67%;
+  margin: 40px auto 0px;
+}
+.section2__barCarta {
+  @include flex-column;
+  background-color: $color_type_2;
+  border: 1px dashed rgba(0, 0, 0, 0);
+  border-radius: 15px 15px 15px 15px;
+}
+.section2__barCarta.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 669px;
+}
+.section2__cartaJ {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 0.43;
+  @include lg {
+    font-size: 61px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 52px;
+  }
+  @include sm {
+    font-size: 43px;
+  }
+  @include xs {
+    font-size: 39px;
+  }
+  @include xxs {
+    font-size: 35px;
+  }
+  @include tn {
+    font-size: 32px;
+  }
+}
+.section2__cartaJ.layout {
+  position: absolute;
+  top: -3px;
+  height: 106px;
+  left: 46px;
+  width: 385px;
+}
+.section2__carta1 {
+  @include flex-column;
+}
+.section2__carta1.layout {
+  position: relative;
+  flex-grow: 1;
+  width: 7.72%;
+  margin: 19px 89% 19px 3.28%;
+}
+.section2__hero_title3 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  @include lg {
+    font-size: 32px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 29px;
+  }
+  @include sm {
+    font-size: 25px;
+  }
+  @include xs {
+    font-size: 24px;
+  }
+  @include xxs {
+    font-size: 22px;
+  }
+  @include tn {
+    font-size: 21px;
+  }
+}
+.section2__hero_title3.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 9px 10px;
+  @include lg {
+    margin: 9px;
+  }
+  @include md {
+    margin: 9px 7px;
+  }
+  @include sm {
+    margin: 9px 6px;
+  }
+  @include xxs {
+    margin: 9px 5px;
+  }
+}
+.section3__realizarPedido {
+  @include flex-column;
+}
+.section3__realizarPedido.layout {
+  position: relative;
+  margin: 60px 33px 1777px 34px;
+  @include lg {
+    margin: 60px 29px 1777px 30px;
+  }
+  @include md {
+    margin: 60px 24px 1777px 25px;
+  }
+  @include sm {
+    margin: 60px 20px 1777px 21px;
+  }
+  @include xs {
+    margin: 60px 18px 1777px 19px;
+  }
+  @include xxs {
+    margin: 60px 16px 1777px 17px;
+  }
+  @include tn {
+    margin: 60px 15px 1777px;
+  }
+}
+.section3__btnComprar {
+  @include flex-column;
+  background-color: $color_type_4;
+  border-radius: 50px 50px 50px 50px;
+  cursor: pointer;
+}
+.section3__btnComprar.layout {
+  position: absolute;
+  height: min-content;
+  bottom: 0px;
+  left: 814px;
+  right: 79px;
+}
+.section3__comprar {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_0;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  @include lg {
+    font-size: 83px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 70px;
+  }
+  @include sm {
+    font-size: 58px;
+  }
+  @include xs {
+    font-size: 52px;
+  }
+  @include xxs {
+    font-size: 46px;
+  }
+  @include tn {
+    font-size: 42px;
+  }
+}
+.section3__comprar.layout {
+  position: relative;
+  height: min-content;
+  min-width: 0px;
+  width: fit-content;
+  margin: 5px auto;
+}
+.section3__listaPlatillos {
+  @include flex-column;
+  background-color: $color_type_2;
+  border: 1px dashed rgba(0, 0, 0, 0);
+  border-radius: 15px 15px 15px 15px;
+}
+.section3__listaPlatillos.layout {
+  position: absolute;
+  height: 611px;
+  bottom: -227px;
+  left: 105px;
+  width: 626px;
+}
+.section3__lista {
+  @include flex-column;
+}
+.section3__lista.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 18px 12px 17px 22px;
+  @include lg {
+    margin: 18px 11px 17px 19px;
+  }
+  @include md {
+    margin: 18px 9px 17px 16px;
+  }
+  @include sm {
+    margin: 18px 8px 17px 14px;
+  }
+  @include xs {
+    margin: 18px 7px 17px 13px;
+  }
+  @include xxs {
+    margin: 18px 6px 17px 11px;
+  }
+  @include tn {
+    margin: 18px 6px 17px 10px;
+  }
+}
+.section3__platillos2 {
+  @include font-face($font_type_3, $color_type_0, 0px);
+  @include lg {
+    font-size: 22px;
+    text-align: left;
+  }
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 19px;
+  }
+  @include xs {
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 17px;
+  }
+  @include tn {
+    font-size: 16px;
+  }
+}
+.section3__platillos2.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 10px 0px 13px 10px;
+  @include lg {
+    margin: 10px 0px 13px 9px;
+  }
+  @include md {
+    margin: 10px 0px 13px 7px;
+  }
+  @include sm {
+    margin: 10px 0px 13px 6px;
+  }
+  @include xxs {
+    margin: 10px 0px 13px 5px;
+  }
+}
+.section3__barRealizarPedido {
+  @include flex-column;
+  background-color: $color_type_2;
+  border: 1px dashed rgba(0, 0, 0, 0);
+  border-radius: 15px 15px 15px 15px;
+}
+.section3__barRealizarPedido.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 0px 463px;
+}
+.section3__realizarPedidoJ {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_1;
+  color: $color_type_1;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 0.43;
+  @include lg {
+    font-size: 61px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 52px;
+  }
+  @include sm {
+    font-size: 43px;
+  }
+  @include xs {
+    font-size: 39px;
+  }
+  @include xxs {
+    font-size: 35px;
+  }
+  @include tn {
+    font-size: 32px;
+  }
+}
+.section3__realizarPedidoJ.layout {
+  position: absolute;
+  top: 10px;
+  height: 90px;
+  left: 86px;
+  width: 457px;
+}
+.section3__realizarPedido1 {
+  @include flex-column;
+}
+.section3__realizarPedido1.layout {
+  position: relative;
+  flex-grow: 1;
+  width: 19.59%;
+  margin: 19px 77.13% 19px 3.28%;
+}
+.section3__hero_title3 {
+  @include v-center-content;
+  justify-content: center;
+  font: $font_type_2;
+  color: $color_type_0;
+  text-align: center;
+  letter-spacing: 0px;
+  @include lg {
+    font-size: 32px;
+    text-align: center;
+  }
+  @include md {
+    font-size: 29px;
+  }
+  @include sm {
+    font-size: 25px;
+  }
+  @include xs {
+    font-size: 24px;
+  }
+  @include xxs {
+    font-size: 22px;
+  }
+  @include tn {
+    font-size: 21px;
+  }
+}
+.section3__hero_title3.layout {
+  position: relative;
+  flex-grow: 1;
+  margin: 9px 9.5px;
+  @include lg {
+    margin: 9px 8px;
+  }
+  @include md {
+    margin: 9px 7px;
+  }
+  @include sm {
+    margin: 9px 6px;
+  }
+  @include xs {
+    margin: 9px 5px;
+  }
+}
