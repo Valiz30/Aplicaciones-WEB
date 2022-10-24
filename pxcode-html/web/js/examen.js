@@ -1,9 +1,8 @@
 class Platillo{
-    constructor(nombre, tipo, precio, pos){ 
+    constructor(nombre, tipo, precio){ 
         this.nombre = nombre;
         this.tipo = tipo;
         this.precio = precio;
-        this.pos = pos;
     }
     getNombre(){
         return this.nombre;
@@ -13,9 +12,6 @@ class Platillo{
     }
     getPrecio(){
         return this.precio;
-    }
-    getPos(){
-        return this.pos;
     }
     setTipo(tipo){
         this.tipo = tipo;
@@ -74,9 +70,6 @@ function Añadir() {
     var nombre = document.getElementById("nombre").value;
     var tipo = document.getElementById("tipoPlatillo").value;
     var precio = document.getElementById("precio").value;
-    console.log(typeof nombre);
-    console.log(typeof tipo);
-    console.log(typeof parseInt(precio));
     var platillo = new Platillo(nombre, tipo, parseInt(precio));
     menu.setPlatillo(platillo);
     document.getElementById("p"+String(menu.getContador())).innerHTML = nombre;
@@ -84,12 +77,8 @@ function Añadir() {
 function Eliminar() {
     var nombre = document.getElementById("nombre").value;
     var cont = 0;
-    console.log(typeof nombre);
     var pos = menu.eliminarPlatillo(nombre);
-    console.log(menu.getContador());
     for(var i = pos; i < menu.getContador(); i++) {
-        console.log(pos);
-        console.log(menu.getPlatillo(i).getNombre());
         document.getElementById("p"+String(i+1)).innerHTML = menu.getPlatillo(i).getNombre();
         cont = i;
     }
@@ -99,7 +88,6 @@ function Modificar() {
     var nombre = document.getElementById("nombre").value;
     var tipo = document.getElementById("tipoPlatillo").value;
     var precio = document.getElementById("precio").value;
-    console.log(menu);
     for (let i = 0; i < this.platillos.length; i++) {
         if(nombre == menu.getPlatillo(i).getNombre()){
             menu.getPlatillo(i).setPrecio(parseInt(precio));
@@ -107,12 +95,9 @@ function Modificar() {
             break;
         }
     }
-    console.log(menu);
 }
 function Mostrar(id) {
     var i = id.replace(/p/g, ''); 
-    var nombre = menu.getPlatillo(i-1).getNombre();
-    console.log(nombre);
     document.getElementById("nombreP").value = menu.getPlatillo(i-1).getNombre();
     document.getElementById("tipoP").value = menu.getPlatillo(i-1).getTipo();
     document.getElementById("precioP").value = menu.getPlatillo(i-1).getPrecio();
@@ -122,8 +107,6 @@ function Ordenar() {
     var precio = document.getElementById("precioP").value;
     dineroCuenta = dineroCuenta + parseInt(precio);
     contadorPlatCuenta++;
-    console.log(nombre);
-    console.log(dineroCuenta);
     document.getElementById("c"+String(contadorPlatCuenta)).innerHTML = nombre;
     document.getElementById("totalCuenta").innerHTML = String(dineroCuenta)+"$";
 }
@@ -139,7 +122,7 @@ function Comprar() {
 }
 function Calcular() {
     var dinG = localStorage.getItem("Dinero");
-    document.getElementById("final").innerHTML = String(dinG);
+    document.getElementById("final").innerHTML = String(dinG) + "$";
 }
 function Registrar() {
     var nombre = document.getElementById("name").value;
